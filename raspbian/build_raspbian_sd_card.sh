@@ -58,7 +58,6 @@
 # apt-get install binfmt-support qemu qemu-user-static debootstrap kpartx lvm2 dosfstools
 
 deb_mirror="http://archive.raspbian.org/raspbian"
-deb_local_mirror="http://localhost:3142/archive.raspbian.org/raspbian"
 
 if [ ${EUID} -ne 0 ]; then
   echo "this tool must be run as root"
