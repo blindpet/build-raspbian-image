@@ -30,7 +30,7 @@
 # you need at least
 # apt-get install binfmt-support qemu qemu-user-static debootstrap kpartx lvm2 dosfstools
 
-deb_mirror="http://http.us.debian.org/debian"
+deb_mirror="http://http.de.debian.org/debian"
 #deb_local_mirror="http://debian.kmp.or.at:3142/debian"
 
 bootsize="64M"
@@ -159,7 +159,7 @@ chmod +x /usr/bin/rpi-update
 mkdir -p /lib/modules/3.1.9+
 touch /boot/start.elf
 rpi-update
-apt-get -y install locales console-common ntp openssh-server less vim
+apt-get -y install locales console-common ntp openssh-server less vim nano sudo raspi-config usbutils dosfstools firmware-linux-nonfree
 echo "execute all necessary commands, then type exit"
 bash
 echo \"root:raspberry\" | chpasswd
